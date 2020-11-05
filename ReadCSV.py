@@ -3,6 +3,11 @@ import time
 import re
 
 def write_chat_txtfile():
+    """
+    Write the csv file
+
+    Args:
+    """
     chat_txtfile = open(r'C:\Users\ctrl\Desktop\chat.txt','w',encoding='gb18030')
     count = 0
     with open(r'C:\Users\ctrl\Desktop\chathistory.csv','r',encoding='gb18030') as f:
@@ -36,6 +41,11 @@ def write_chat_txtfile():
                 print(count)
 
 def write_sorted_chathistory():
+    """
+    Write a list of - csv to csv file.
+
+    Args:
+    """
     chat_txtfile = open(r'C:\Users\ctrl\Desktop\chat_tk.txt', 'w', encoding='gb18030')
     count = 0
     chathistory_dict = {}
