@@ -5,6 +5,11 @@ filename = r'C:\Users\ctrl\Desktop\chat_tk'
 
 # 此模块用于分析文件中的字频，输出结果形如 词语 --- 权重频次
 def AnalyzeData():
+    """
+    Returns a dictionary of all tags from the file.
+
+    Args:
+    """
     f = open(filename + '.txt', 'r', encoding='gb18030')
     fcontent = f.read()
     alpha = 'qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM'
@@ -31,6 +36,11 @@ from scipy.misc import imread
 import wordcloud
 
 def cloudplot():
+    """
+    Generate cloudplotlib.
+
+    Args:
+    """
     # 设置模板图像的路径
     target_coloring = imread(r'C:\Users\ctrl\Desktop\heart.jpg')
     # 以词频和背景模板为依据生成词云对象
